@@ -1,0 +1,27 @@
+Comandos GIT
+
+CONFIGURAÇÃO INICIAL
+git config --global user.name
+git config --global user.email
+
+CRIAR REPOSITÓRIO
+- acessar o diretório onde está o repositório
+git init
+
+ADICIONAR ARQUIVO
+git add
+
+REALIZAR O COMMIT
+git commit -m "Mensagem do log do commit"
+
+REMOVER ARUQIVO ANTES DO COMMIT
+git checkout -nome_do_arquivo
+
+VER O LOG
+git log -p
+
+VER AS ESTATÍSTICAS DO LOG FORMATADO
+git log --pretty=format:"%h - %an, %ar : %s"
+
+VER O LOG DE COMMITS DOS ÚLTIMOS 2 DIAS
+git log --since=2.days
