@@ -15,7 +15,7 @@ REALIZAR O COMMIT
 git commit -m "Mensagem do log do commit"
 
 REMOVER ARUQIVO ANTES DO COMMIT
-git checkout -nome_do_arquivo
+git reset HEAD <nome do arquivo>
 
 VER O LOG
 git log -p
