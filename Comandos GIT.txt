@@ -58,6 +58,12 @@ git checkout -b 0.1.0
 - PARA REMOVER UMA BRANCH
 git branch -D nome-do-branch
 
+- PARA CONFIGURAR UM REPOSITÓRIO REMOTO
+git remote add origin https://github.com/guicastro/aula-git.git
+
+- PARA CRIAR UMA BRANCH NO REPOSITÓRIO REMOTO
+git push origin master
+
 - PARA ENVIAR UM REPOSITORIO (PUSH)
 git push nome_repositorio_remoto nome_branch_local
 (o padrão de nome_repositorio_remoto é origin)
