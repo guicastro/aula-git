@@ -45,3 +45,13 @@ git branch
 
 - CRIAR BRANCH
 git checkout -b 0.1.0
+
+- PARA JUNTAR BRANCHES (MERGE)
+1) acessar a branch que vai receber a outra branch
+2) git merge nome_da_outra_branch
+3) Preencher a mensagem de Commit e depois :wq
+
+- PARA JUNTAR BRANCH NÁO MOSTRANDO COMMIT (REBASE)
+1) acessar a branch que vai receber a outra branch
+2) git rebase nome_da_outra_branch
+
