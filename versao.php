@@ -29,7 +29,7 @@
 
 
 			echo "<pre>";
-			echo "<br>all_branchs: ".$branch;
+			echo "<br>branch: ".$branch;
 			echo "<br>hash: ".$hash;
 			echo "<br>author_name: ".$author_name;
 			echo "<br>author_email: ".$author_email;
