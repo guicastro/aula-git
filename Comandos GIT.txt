@@ -78,3 +78,10 @@ git checkout -b nome_branch_local caminho_branch_remoto
 
 - PARA OBTER AS ALTERAÇÕES DO REPOSITÓRIO REMOTO
 git pull nome_repositorio_remoto nome_branch
+
+- PARA CRIAR UMA TAG DA BRANCH (RELEASE)
+git tag nome_da_tag
+(é o RELEASE, usar preferencialmente versionamento semântico)
+
+PARA ENVIAR AS TAGS PARA O REPOSITÓRIO REMOTO
+- git push origin master --tags

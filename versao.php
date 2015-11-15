@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Listagem de Clientes</title>
+	<title>Versão do GIT</title>
 
 	<link rel="stylesheet" type="text/css" href="src/Bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="src/Normalize/normalize.css">
