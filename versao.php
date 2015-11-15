@@ -25,6 +25,7 @@
 			$author_name = `git log -1 --pretty=format:"%an" --abbrev-commit`;
 			$author_email = `git log -1 --pretty=format:"%ae" --abbrev-commit`;
 			$committer_date = `git log -1 --date=short --pretty=format:"%cd" --abbrev-commit`;
+			$commit_subject = `git log -1 --date=short --pretty=format:"%s" --abbrev-commit`;
 
 
 			echo "<pre>";
@@ -33,6 +34,7 @@
 			echo "<br>author_name: ".$author_name;
 			echo "<br>author_email: ".$author_email;
 			echo "<br>committer_date: ".$committer_date;
+			echo "<br>commit_subject: ".$commit_subject;
 			echo "</pre>";
 		?>
 	</div>
