@@ -57,3 +57,16 @@ git checkout -b 0.1.0
 
 - PARA REMOVER UMA BRANCH
 git branch -D nome-do-branch
+
+- PARA ENVIAR UM REPOSITORIO (PUSH)
+git push nome_repositorio_remoto nome_branch_local
+(o padrão de nome_repositorio_remoto é origin)
+
+- PARA CLONAR UM REPOSITORIO REMOTO
+git clone endereco_do_repositorio_remoto nome_pasta_local
+(nome da pasta local somente se desejar, caso não definido usará o nome do repositório remoto)
+
+- PARA CRIAR UMA BRANCH LOCAL BASEADO EM UMA BRANCH DE UM REPOSITÓRIO REMOTO
+git checkout -b nome_branch_local caminho_branch_remoto
+(para ver as banches remotas, usar git branch -a)
+
