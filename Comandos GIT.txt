@@ -70,3 +70,5 @@ git clone endereco_do_repositorio_remoto nome_pasta_local
 git checkout -b nome_branch_local caminho_branch_remoto
 (para ver as banches remotas, usar git branch -a)
 
+- PARA OBTER AS ALTERAÇÕES DO REPOSITÓRIO REMOTO
+git pull nome_repositorio_remoto nome_branch
