@@ -55,3 +55,5 @@ git checkout -b 0.1.0
 1) acessar a branch que vai receber a outra branch
 2) git rebase nome_da_outra_branch
 
+- PARA REMOVER UMA BRANCH
+git branch -D nome-do-branch
