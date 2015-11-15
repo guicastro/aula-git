@@ -4,7 +4,7 @@
 Repositório criado para utilização no curso de GIT da School of NET.
 
 ## Comandos utilizados
-*git init*
+**git init**\n
 Iniciar o repositório GIT na pasta
 
 *git add*
