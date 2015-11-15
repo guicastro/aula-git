@@ -1,5 +1,6 @@
-# aula-git
+# CURSO GIT - SCHOOL OF NET
 
-## dois
+## Descrição
+Repositório criado para utilização no curso de GIT da School of NET.
 
-### tres
+## Comandos utilizados
