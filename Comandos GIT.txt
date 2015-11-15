@@ -39,3 +39,9 @@ git reset HEAD˜1
 
 - VOLTAR O ARQUIVO A VERSÃO ORIGINAL
 git checkout -- nome_do_arquivo.php
+
+- MOSTRAR A BRANCH ATUAL
+git branch
+
+- CRIAR BRANCH
+git checkout -b 0.1.0
