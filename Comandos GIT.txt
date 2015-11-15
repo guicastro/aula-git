@@ -83,5 +83,8 @@ git pull nome_repositorio_remoto nome_branch
 git tag nome_da_tag
 (é o RELEASE, usar preferencialmente versionamento semântico)
 
-PARA ENVIAR AS TAGS PARA O REPOSITÓRIO REMOTO
-- git push origin master --tags
+- PARA ENVIAR AS TAGS PARA O REPOSITÓRIO REMOTO
+git push origin master --tags
+
+- PARA REMOVER UMA BRANCH NO REPOSITÓRIO REMOTO
+git push origin :nome-do-branch

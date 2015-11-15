@@ -20,16 +20,18 @@
 		<h3>ÚLTIMO COMMIT</h3>
 		<?php
 
-			$branch = `git log -1 --pretty=format:"%d" --abbrev-commit`;
-			$hash = `git log -1 --pretty=format:"%h" --abbrev-commit`;
-			$author_name = `git log -1 --pretty=format:"%an" --abbrev-commit`;
-			$author_email = `git log -1 --pretty=format:"%ae" --abbrev-commit`;
-			$committer_date = `git log -1 --date=short --pretty=format:"%cd" --abbrev-commit`;
-			$commit_subject = `git log -1 --date=short --pretty=format:"%s" --abbrev-commit`;
+			$branchs_tags = `git log -1 --pretty=format:"%D"`;
+			$release = explode(",",explode("tag: ",$branchs_tags)[1]);
+			$hash = `git log -1 --pretty=format:"%h"`;
+			$author_name = `git log -1 --pretty=format:"%an"`;
+			$author_email = `git log -1 --pretty=format:"%ae"`;
+			$committer_date = `git log -1 --date=short --pretty=format:"%cd"`;
+			$commit_subject = `git log -1 --date=short --pretty=format:"%s"`;
 
 
 			echo "<pre>";
-			echo "<br>branch: ".$branch;
+			echo "branchs_tags: ".$branchs_tags;
+			echo "<br>release: ".$release[0];
 			echo "<br>hash: ".$hash;
 			echo "<br>author_name: ".$author_name;
 			echo "<br>author_email: ".$author_email;
