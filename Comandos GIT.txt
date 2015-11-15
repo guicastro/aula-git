@@ -1,27 +1,41 @@
 Comandos GIT
 
-CONFIGURAÇÃO INICIAL
+- CONFIGURAÇÃO INICIAL
 git config --global user.name
 git config --global user.email
 
-CRIAR REPOSITÓRIO
-- acessar o diretório onde está o repositório
-git init
+- CRIAR REPOSITÓRIO
+1) cessar o diretório onde está o repositório
+2) git init
 
-ADICIONAR ARQUIVO
+- ADICIONAR ARQUIVO
 git add
 
-REALIZAR O COMMIT
+- REALIZAR O COMMIT
 git commit -m "Mensagem do log do commit"
 
-REMOVER ARUQIVO ANTES DO COMMIT
+- REMOVER ARQUIVO DO COMMIT E DEIXAR COMO UNSTAGE
 git reset HEAD <nome do arquivo>
 
-VER O LOG
+- VER O LOG
 git log -p
 
-VER AS ESTATÍSTICAS DO LOG FORMATADO
+- VER AS ESTATÍSTICAS DO LOG FORMATADO
 git log --pretty=format:"%h - %an, %ar : %s"
 
-VER O LOG DE COMMITS DOS ÚLTIMOS 2 DIAS
+- VER O LOG DE COMMITS DOS ÚLTIMOS 2 DIAS
 git log --since=2.days
+
+- VOLTAR COMMIT
+git checkout hash_do_commit_a_restaurar
+
+- VOLTAR COMMIT ATÉ O PONTO ONDE O ARQUIVO FOI ADICIONADO (o ˜1 indica o último commit, pode ser 2, 3, etc)
+git reset HEAD˜1 --soft
+(trocando o --soft por --hard remove todos os commits)
+
+
+- VOLTAR COMMIT (o ˜1 indica o último commit, pode ser 2, 3, etc)
+git reset HEAD˜1
+
+- VOLTAR O ARQUIVO A VERSÃO ORIGINAL
+git checkout -- nome_do_arquivo.php
