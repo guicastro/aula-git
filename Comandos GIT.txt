@@ -1,40 +1,37 @@
-Comandos GIT
+# Principais Comandos GIT
 
-- CONFIGURAÇÃO INICIAL
-git config --global user.name
-git config --global user.email
+### CONFIGURAÇÃO INICIAL
+- git config --global user.name
+- git config --global user.email
 
-- CRIAR REPOSITÓRIO
-1) cessar o diretório onde está o repositório
+### CRIAR REPOSITÓRIO
+1) Acessar o diretório onde será o repositório
 2) git init
 
-- ADICIONAR ARQUIVO
-git add
+### ADICIONAR ARQUIVO AO CONTROLE GIT
+- git add nome_do_arquivo
+- git add *
+(para incluir todos)
 
-- REALIZAR O COMMIT
-git commit -m "Mensagem do log do commit"
+### REALIZAR O COMMIT (DEPOIS DE ADD)
+- git commit -m "Mensagem do log do commit"
 
-- REMOVER ARQUIVO DO COMMIT E DEIXAR COMO UNSTAGE
-git reset HEAD <nome do arquivo>
+### REMOVER ARQUIVO DO COMMIT E DEIXAR COMO UNSTAGE
+- git reset HEAD nome_do_arquivo
 
-- VER O LOG
-git log -p
+### VER O LOG
+- git log
+- git log -p (completo, incluindo diff)
+- git log --pretty=format:"%h - %an, %ar : %s" (opção formatada)
+- git log --since=2.days (log só dos últimos 2 dias)
 
-- VER AS ESTATÍSTICAS DO LOG FORMATADO
-git log --pretty=format:"%h - %an, %ar : %s"
+### VOLTAR COMMIT
+- git checkout hash_do_commit_a_restaurar
 
-- VER O LOG DE COMMITS DOS ÚLTIMOS 2 DIAS
-git log --since=2.days
+### VOLTAR COMMIT ATÉ O PONTO ONDE O ARQUIVO FOI ADICIONADO (o ˜1 indica o último commit, pode ser 2, 3, etc)
+- git reset HEAD˜1 --soft (trocando o --soft por --hard remove todos os commits)
 
-- VOLTAR COMMIT
-git checkout hash_do_commit_a_restaurar
-
-- VOLTAR COMMIT ATÉ O PONTO ONDE O ARQUIVO FOI ADICIONADO (o ˜1 indica o último commit, pode ser 2, 3, etc)
-git reset HEAD˜1 --soft
-(trocando o --soft por --hard remove todos os commits)
-
-
-- VOLTAR COMMIT (o ˜1 indica o último commit, pode ser 2, 3, etc)
+### VOLTAR COMMIT (o ˜1 indica o último commit, pode ser 2, 3, etc)
 git reset HEAD˜1
 
 - VOLTAR O ARQUIVO A VERSÃO ORIGINAL
