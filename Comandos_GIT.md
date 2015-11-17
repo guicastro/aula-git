@@ -13,8 +13,11 @@
 - git add *
 (para incluir todos)
 
-### REALIZAR O COMMIT (DEPOIS DE ADD)
-- git commit -m "Mensagem do log do commit"
+### PARA REMOVER UM ARQUIVO
+- git rm *nome_do_arquivo* -f (opçõa -f força a remoção)
+
+### REALIZAR O COMMIT (DEPOIS DE ADD/DELETE)
+- git commit -a -m "Mensagem do log do commit" (opção -a faz o commit tanto dos arquivos add com os delete)
 
 ### REMOVER ARQUIVO DO COMMIT E DEIXAR COMO UNSTAGE
 - git reset HEAD *nome_do_arquivo*
