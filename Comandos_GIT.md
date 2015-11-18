@@ -72,8 +72,17 @@
 ### PARA CRIAR UMA TAG DA BRANCH (RELEASE)
 - git tag *nome_da_tag* (é o RELEASE, usar preferencialmente versionamento semântico)
 
+### PARA LISTAR AS TAGS
+- git tag -l
+
+### PARA REMOVER UMA TAGS
+- git tag -l
+
 ### PARA REMOVER UMA TAG NO REPOSITÓRIO REMOTO
 - git push *nome_repositorio_remoto* :refs/tags/*nome_da_tag*
 
 ### PARA REMOVER UMA BRANCH NO REPOSITÓRIO REMOTO
 - git push origin :*nome_da_branch*
+
+### PARA ATUALIZAR O REPOSITÓRIO REMOTO (SOMENTE IDENTIFICAR DIFERENÇAS)
+- git fetch *nome_repositorio_remoto*
