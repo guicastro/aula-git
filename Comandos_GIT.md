@@ -43,6 +43,9 @@
 ### MOSTRAR A BRANCH ATUAL
 - git branch
 
+### ACESSAR UMA BRANCH
+- git checkout *nome_da_branch*
+
 ### MOSTRAR TODAS AS BRANCHES, INCLUSIVE REMOTAS
 - git branch -a (a branch com * será a atual)
 
@@ -50,7 +53,7 @@
 - git checkout -b *nome_da_branch*
 
 ### EXCLUIR BRANCH
-- git checkout -b *nome_da_branch*
+- git branch -d *nome_da_branch*
 
 ### PARA JUNTAR BRANCHES
 - git rebase *nome_da_branch_que_vai_juntar* (deve ser feito dentro da branch que vai receber o rebase)
