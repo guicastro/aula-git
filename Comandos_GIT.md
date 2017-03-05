@@ -37,6 +37,7 @@
 - git log -p (completo, incluindo diff)
 - git log --pretty=format:"%h - %an, %ar : %s" (opção formatada)
 - git log --since=2.days (log só dos últimos 2 dias)
+- git for-each-ref --format="%(refname:short) | %(committerdate:short) | %(subject) %(body)" refs/tags (opção de LOG com tag e mensagens de commit)
 
 ## TRABALHANDO COM BRANCHES
 
